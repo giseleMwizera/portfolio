@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;1,100;1,200;1,300;1,400&display=swap");
+:root {
+  --main__yellow: #ccf381;
+  --yellow-grad: #cbf38179;
+  --white: #fff;
+  --purple: #371dd2;
+  --purple-grad: #381dd256;
+  --grey: #c4c4c4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.content {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--grey);
+}
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 10%;
+  height: 8%;
+}
+.add_Blog_form {
+  width: 60%;
+  height: 95%;
+  margin: 1em auto;
+  background-color: white;
+}
+.add_Blog_form p {
+  padding-top: 1%;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: var(--main__yellow);
+  font-weight: 700;
+  text-align: center;
+}
+
+.add_Blog_form form {
+  padding-top: 1%;
+  padding-left: 20%;
+}
+.add_Blog_form div {
+  padding-top: 1em;
+}
+input {
+  display: block;
+  width: 80%;
+  height: 5%;
+  background-color: rgba(111, 121, 111, 0.267);
+  border: none;
+}
+
+input[name="blog-content"] {
+  height: 30%;
+}
+
+select {
+  width: 80%;
+  background-color: var(--grey);
+  border: none;
+  height: 5%;
+  display: block;
+}
+input[type="submit"] {
+  background-color: var(--main__yellow);
+  color: white;
+  font-weight: 600;
+  width: 40%;
+  height: 6%;
+  margin-left: 10em;
+  margin-top: 4%;
+  border-radius: 0.3em;
+  font-size: 1.05em;
+}
+input[type="submit"]:hover {
+  background-color: transparent;
+  border: 2px solid var(--main__yellow);
+  color: var(--main__yellow);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 769px) {
+  .logo img {
+    width: 60%;
+    height: 10%;
+  }
+  .add_Blog_form {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}

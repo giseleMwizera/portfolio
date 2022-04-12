@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;1,100;1,200;1,300;1,400&display=swap");
+:root {
+  --main__yellow: #ccf381;
+  --white: #fff;
+  --purple: #371dd2;
+  --grey: #c4c4c4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: var(--grey);
+  opacity: 70%;
+  padding-top: 5%;
+}
+
+.form {
+  padding-top: 3vh;
+  width: 40%;
+  height: 70%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--white);
+
+  position: relative;
+}
+
+.navigation {
+  width: 60%;
+  margin: 5% 18%;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2em;
+}
+
+.navigation a.active {
+  color: var(--purple);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+input {
+  width: 50%;
+  height: 10%;
+  border: 1px solid var(--grey);
+  text-align: left;
+  padding-left: 2em;
+  padding-top: 0.8em;
+  opacity: 60%;
+  margin-top: 2em;
+  border-radius: 0.5em;
+  font-size: 1em;
+  text-transform: capitalize;
+}
+
+.logo img {
+  width: 8em;
+  height: 4em;
+}
+
+.content-submit .button {
+  width: 18%;
+  height: 9%;
+  background-color: var(--purple);
+  color: var(--white);
+  font-size: 1em;
+  border-radius: 0.3em;
+  opacity: 200% !important;
+  padding-left: 0em;
+  padding-top: 0em;
+  text-align: center;
+  margin-top: 3em;
+}
+.content-submit .button:hover {
+  background-color: transparent;
+  border: 2px solid var(--purple);
+  color: var(--purple);
+  cursor: pointer;
+}
+.dots {
+  position: absolute;
+  top: 20%;
+  right: 1%;
+  display: flex;
+  flex: column;
+  width: 5%;
+  height: 50%;
+  justify-content: space-between;
+  z-index: 0;
+}
+
+.dots .row div {
+  height: 5px;
+  width: 5px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  margin: 0.3em;
+}
+
+.dots.blue1 {
+  position: absolute;
+  top: 60%;
+  right: 2%;
+  display: flex;
+  flex: column;
+  width: 10%;
+  height: 50%;
+
+  justify-content: space-between;
+}
+.dots.blue2 {
+  left: 0.7%;
+}
+.dots .row div {
+  background-color: blue;
+  opacity: 30%;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-top: 40%;
+    font-size: 1.3em;
+  }
+  .form {
+    padding-top: 25%;
+    width: 90%;
+    height: 80%;
+    position: relative;
+  }
+  .content-submit {
+    width: 100%;
+  }
+  input {
+    width: 80%;
+    height: 8%;
+    font-size: 0.8em;
+  }
+  .content-submit .button {
+    width: 70%;
+  }
+  .dots {
+    height: 20%;
+  }
+  .dots.blue1 {
+    position: absolute;
+    top: 6%;
+    right: 55%;
+    display: flex;
+    flex: column;
+    width: 10%;
+    height: 10%;
+    transform: rotate(-90deg);
+    justify-content: space-between;
+  }
+  .dots.blue2 {
+    top: 88%;
+    left: 40%;
+    transform: rotate(-90deg);
+    position: absolute;
+  }
+}
